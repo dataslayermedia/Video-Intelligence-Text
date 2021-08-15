@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Page Title</title>
-<script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <title>Page Title</title>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <style>
+        #results {}
+    </style>
 </head>
+
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>Original Video</h1>
+    <video id="my-video" controls="true" width="1200" height="700" crossorigin="anonymous">
+        <source src="./example.MP4" type="video/webm">
+        <source src="./example.MP4" type="video/mp4">
+    </video>
+
+    <h1>Text Detection</h1>
+    <canvas id="my-canvas" width="1200" height="700"></canvas>
+
+    <div id="results"></div>
+
+    <script src="./main.js"></script>
 
 </body>
+
 </html>
